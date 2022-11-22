@@ -1,0 +1,28 @@
+.loading {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.418);
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+}
+
+.loading>div {
+    width: 10vmax;
+    height: 10vmax;
+    border-bottom: 115px solid rgba(0, 0, 55, 0.786);
+    border-top: 115px solid rgba(29, 143, 38, 0.786);
+    border-left: 235px solid rgba(213, 226, 221, 0.786);
+    border-right: 235px solid rgba(38, 38, 150, 0.786);
+    border-radius: 50%;
+    background:linear-gradient(black,rgb(165, 146, 146));
+    animation: lodingAnimate 200ms linear infinite;
+    box-shadow: inset 0px 0px 20px 20px rgba(177, 49, 49, 0.5), 0px 0px 20px 20px rgba(211, 21, 148, 0.5);
+
+}
+
+@keyframes lodingAnimate {
+    to {
+        transform: rotate(-360deg);
+    }
+}
